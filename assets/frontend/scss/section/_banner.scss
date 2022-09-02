@@ -1,0 +1,158 @@
+/*  04. banner section css here  */
+.banner_area{
+    @media #{$large-mobile}{
+       margin-bottom: 29px;
+    }
+}
+.single_banner{
+    @media #{$large-mobile}{
+       margin-bottom: 30px;
+    }
+}
+.banner_thumb{
+    position: relative;
+    overflow: hidden;
+    @media #{$large-mobile}{
+       text-align: center;
+    }
+    & a{
+        & img{
+            @include transition(.3s);
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+    &:hover{
+        & img{
+            transform: scale(1.1) rotate(0.05deg);
+        }
+    }
+}
+
+.banner_text {
+	position: absolute;
+	top: 40px;
+	left: 50px;
+    @media #{$desktop-device}{
+        left: 35px;
+    }
+    @media #{$tablet-device}{
+        top: 23px;
+        left: 25px;
+    }
+    @media #{$large-mobile}{
+        top: 15px;
+        left: 20px;
+    }
+    & h2{
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 700;
+        text-transform: capitalize;
+        margin-bottom: 21px;
+        width: 220px;
+        @media #{$desktop-device}{
+            font-size: 23px;
+            line-height: 25px;
+            margin-bottom: 15px;
+        }
+        @media #{$tablet-device}{
+            font-size: 18px;
+            line-height: 20px;
+            margin-bottom: 7px;
+        }
+        @media #{$large-mobile}{
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 8px;
+        }
+    }
+    & h3{
+        font-size: 22px;
+        line-height: 22px;
+        font-weight: 400;
+        text-transform: capitalize;
+        margin-bottom: 3px;
+         @media #{$tablet-device}{
+            font-size: 15px;
+             line-height: 20px;
+        }
+        @media #{$large-mobile}{
+            font-size: 15px;
+            line-height: 17px;
+        }
+    }
+    & a{
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 40px;
+        text-transform: uppercase;
+        padding: 0 18px;
+        display: inline-block;
+        background: $secondary_color;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        pointer-events: visible;
+        @media #{$tablet-device}{
+            font-size: 12px;
+            line-height: 28px;
+            padding: 0 11px;
+        }
+        &:hover{
+            background: $fonts_color;
+            color: $body-color;
+        }
+         @media #{$large-mobile}{
+            font-size: 12px;
+             line-height: 30px;
+             padding: 0 10px;
+        }
+    }
+}
+
+
+/*home four css here*/
+.banner_sidebar{
+    @media #{$tablet-device}{
+        display: flex;
+        margin-top: 30px;
+    }
+    @media #{$large-mobile}{
+        margin-top: 30px;
+    }
+    & .banner_thumb.mb-20{
+        @media #{$tablet-device}{
+            margin-right: 20px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

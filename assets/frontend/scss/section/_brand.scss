@@ -1,0 +1,110 @@
+/*brand css here*/
+.brand_area{
+    &.mb-42{
+        @media #{$large-mobile}{
+            margin-bottom: 50px;
+        }
+    }
+}
+.single_brand{
+    & img{
+        opacity: 0.5;
+        transition: .3s;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+.brand_container{
+    padding: 20px 0;
+    background: #fff;
+    & .single_brand{
+        & img{
+            width: inherit;
+            margin: 0 auto;
+        }
+    }
+    &:hover{
+        & .owl-nav{
+            & > div{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    & .owl-nav{
+        @media #{$large-mobile}{
+            display: none;
+        }
+        & > div{
+            position: absolute;
+            left: -30px;
+            top: 50%;
+            transform: translatey(-50%);
+            font-size: 42px;
+            @include transition(.3s);
+            opacity: 0;
+            visibility: hidden;
+            @media #{$desktop-device}{
+                left: 0;
+            }
+            @media #{$tablet-device}{
+                left: 0;
+            }
+            &:hover{
+                color: $secondary_color;
+            }
+            &.owl-next{
+                right: -30px;
+                left: auto;
+                @media #{$desktop-device}{
+                    right: 0;
+                }
+                @media #{$tablet-device}{
+                   right: 0;
+                }
+            }
+        }
+    }
+}
+
+/*home two css here*/
+.brand_two{
+    & .brand_container{
+        padding: 37px 0;
+    } 
+}
+
+
+
+/*home three css here*/
+.brand_three{
+    & .brand_container{
+        border: 1px solid $grey_color;
+    }
+}
+
+
+
+/*home five css here*/
+.color_scheme{
+    & .brand_container .owl-nav > div:hover{
+         color: #b2e515;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
