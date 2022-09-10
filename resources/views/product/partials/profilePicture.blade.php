@@ -53,10 +53,7 @@
                         <input type="file" style="display: none;" id="profilePicture" name="file" />
                     </div>
                 </div>
-
             </div>
-
-
         </div>
     </div>
     <div class="card-footer">
